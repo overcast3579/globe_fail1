@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>three globe</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .banner1{
+            display: flex;
+            height: 100vh;
+            background-color: #000;
+        }
+       .globe_wrap{
+            width: 70%;
+            
+        }
+        .word_wrap{
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .text{
+            color: #fff;
+            font-size: 28px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner1">
+        <div class="word_wrap">
+            <p class="text">來場時空穿越之旅吧</p>
+        </div>
+        <div class="globe_wrap" id="globe_container">
+            <canvas class="canvas_globe"></canvas>
+        </div>
+    </div>
+    <script src="./main.js" type="module"></script>
+</body>
+</html>
